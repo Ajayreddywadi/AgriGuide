@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AgriGuide</title>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1><i class="fas fa-leaf icon"></i> AgriGuide</h1>
+    <p>Smart Farming for Better Harvests</p>
+    <nav>
+      <ul>
+        <li><a href="#weather-section">Weather</a></li>
+        <li><a href="#crop-section">Crops</a></li>
+        <li><a href="#soil-section">Soil</a></li>
+        <li><a href="#price-section">Prices</a></li>
+        <li><a href="#fertilizer-section">Fertilizer</a></li>
+        <li><a href="#scheme-section">Govt. Schemes</a></li>
+      </ul>
+    </nav>
+    <button id="dark-mode-toggle" class="theme-toggle" aria-label="Toggle dark mode">🌙 Toggle Dark Mode</button>
+  </header>
+
+  <main>
+    <section id="weather-section">
+      <h2>Weather Information</h2>
+      <input type="text" id="city" placeholder="Enter city name" />
+      <button id="btn-city-weather">Get Weather by City</button>
+      <button id="btn-location-weather">Get Weather by Location</button>
+      <p id="weather-output"></p>
+    </section>
+
+    <section id="crop-section">
+      <h2>Seasonal Crop Suggestion</h2>
+      <select id="season">
+        <option value="summer">Summer</option>
+        <option value="winter">Winter</option>
+        <option value="monsoon">Monsoon</option>
+      </select>
+      <button id="btn-show-crops">Show Crops</button>
+      <p id="crop-output"></p>
+    </section>
+
+    <section id="soil-section">
+      <h2>Soil Type Info</h2>
+      <select id="soil-type">
+        <option value="clay">Clay</option>
+        <option value="sandy">Sandy</option>
+        <option value="loamy">Loamy</option>
+      </select>
+      <button id="btn-show-soil">Show Soil Info</button>
+      <p id="soil-output"></p>
+    </section>
+
+    <section id="price-section">
+      <h2>Crop Market Prices</h2>
+      <select id="crop">
+        <option value="Wheat">Wheat</option>
+        <option value="Rice">Rice</option>
+        <option value="Cotton">Cotton</option>
+        <option value="Maize">Maize</option>
+      </select>
+      <button id="btn-show-price">Show Price</button>
+      <p id="price-output"></p>
+    </section>
+
+    <section id="fertilizer-section">
+      <h2>Fertilizer Recommendation</h2>
+      <select id="fertilizer-crop">
+        <option value="Wheat">Wheat</option>
+        <option value="Rice">Rice</option>
+        <option value="Cotton">Cotton</option>
+        <option value="Maize">Maize</option>
+      </select>
+      <button id="btn-show-fertilizer">Show Fertilizer</button>
+      <p id="fertilizer-output"></p>
+    </section>
+
+    <section id="scheme-section">
+      <h2>Government Schemes for Farmers</h2>
+      <p>Explore these key government initiatives designed to support and empower farmers across India:</p>
+      <ul>
+        <li><a href="https://pmkisan.gov.in/" target="_blank">PM-KISAN</a></li>
+        <li><a href="https://soilhealth.dac.gov.in/" target="_blank">Soil Health Card Scheme</a></li>
+        <li><a href="https://mkisan.gov.in/" target="_blank">mKisan Portal</a></li>
+        <li><a href="https://agriinfra.dac.gov.in/" target="_blank">Agriculture Infrastructure Fund</a></li>
+        <li><a href="https://www.nabard.org/" target="_blank">NABARD Schemes</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
